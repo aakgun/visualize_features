@@ -16,11 +16,13 @@ The implementation is quite quick-and-dirty: it seems to work, but I can't exclu
 ## Resources needed
 
 To run the example without modifications, you will need the OverFeat Torch wrapper from [jhjin/overfeat-torch](https://github.com/jhjin/overfeat-torch).
+
 In short, you will need to:
 * Clone the repository.
 * Follow the instruction to download the weights files, and put the `net_weight_0` file in the `models` directory (you can ignore the other files in the tgz file).
 * Compile the `ParamBank.c` file through the provided `Makefile`.
 * Put `ParamBank.lua` and the compiled `libParamBank.so` in the same directory as my `visualize_features_example.ipynb` notebook.
+
 Also you will need to `bee.jpg` test image [from OverFeat repository](https://raw.githubusercontent.com/sermanet/OverFeat/master/samples/bee.jpg) and put it into the repository root directory. However, it is straightforward to edit the notebook to choose any other picture you'd like.
 
 ## Compatiblity with other networks
